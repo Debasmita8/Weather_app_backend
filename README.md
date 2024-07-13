@@ -1,1 +1,1 @@
-# Weather_app_backend
+# The weather api is taken using python library 'requests'.
