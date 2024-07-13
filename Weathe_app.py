@@ -13,10 +13,7 @@ if (response.json()['cod'] == '404'):
 else:
     Weather = response.json()['weather'][0]['main']
     Temp = round(((response.json()['main']['temp'])-30)/2)
-    feel_temp = round(((response.json()['main'][0]['feels_like'])-30)/2)
-    humidity = response.json()['main'][4]['humidity']
 
     print(f"Weather in {user_input}: {Weather}")
-    print(f"Temperature in {user_input}: {Temp}°C but it feels like: {feel_temp}°C")
-    print(f"Humidity in {user_input}: {humidity}%")
+    print(f"Temperature in {user_input}: {Temp}°C")
     #To get the degree symbol alt+0176.
